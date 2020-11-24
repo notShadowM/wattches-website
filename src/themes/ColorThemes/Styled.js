@@ -13,4 +13,8 @@ export const theme = {
     skeletonButtons: "#D84727",
     footer: "#fff",
   },
+  common: {
+    white: "#FFF",
+    black: "#000",
+  },
 };

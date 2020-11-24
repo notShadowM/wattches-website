@@ -9,10 +9,11 @@ const fontFaces = css`
 export const Navitems = styled.li`
   font-family: Taviraj;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 34.12px;
+  font-size: ${(props) => (props.size ? props.size : "20px")};
+  line-height: ${(props) => (props.lineHeight ? props.lineHeight : "34.12px")};
   font-style: normal;
   color: ${T.theme.text.main};
+  letter-spacing: 0.02em;
 `;
 
 export const H1 = styled.h1`
@@ -22,6 +23,7 @@ export const H1 = styled.h1`
   line-height: 80px;
   font-style: normal;
   color: ${T.theme.text.main};
+  letter-spacing: 0.02em;
 `;
 
 export const H2 = styled.h2`
@@ -31,6 +33,7 @@ export const H2 = styled.h2`
   line-height: ${(props) => (props.lineHeight ? props.lineHeight : "40px")};
   font-style: normal;
   color: ${T.theme.text.main};
+  letter-spacing: 0.02em;
 `;
 
 export const H3 = styled.h3`
@@ -40,6 +43,7 @@ export const H3 = styled.h3`
   line-height: 32px;
   font-style: normal;
   color: ${T.theme.text.main};
+  letter-spacing: 0.03em;
 `;
 
 export const H4 = styled.h4`
@@ -50,6 +54,7 @@ export const H4 = styled.h4`
   font-style: normal;
   color: ${(props) =>
     props.color ? T.theme.text[props.color] : T.theme.text.main};
+  letter-spacing: 0.03em;
 `;
 
 export const P1 = styled.p`
@@ -60,6 +65,7 @@ export const P1 = styled.p`
   font-style: normal;
   color: ${(props) =>
     props.color ? T.theme.text[props.color] : T.theme.text.main};
+  letter-spacing: 0.03em;
 `;
 
 export const P2 = styled.p`
@@ -70,6 +76,7 @@ export const P2 = styled.p`
   font-style: normal;
   color: ${(props) =>
     props.color ? T.theme.text[props.color] : T.theme.text.main};
+  letter-spacing: 0.03em;
 `;
 
 export const Pbold = styled.p`
@@ -81,6 +88,7 @@ export const Pbold = styled.p`
   color: ${T.theme.text.main};
   border-bottom: 1px solid ${T.theme.text.main};
   display: inline-block;
+  letter-spacing: 0.03em;
 `;
 
 export const footerH = styled.h4`
@@ -90,11 +98,13 @@ export const footerH = styled.h4`
   line-height: 40.94px;
   font-style: normal;
   color: ${T.theme.text.footer};
+  letter-spacing: 0.03em;
 `;
 
 export const footerP = styled(P1)`
   line-height: ${(props) => (props.lineHeight ? props.lineHeight : "32px")};
   color: ${T.theme.text.footer};
+  letter-spacing: 0.03em;
 `;
 
 export const footerPbolder = styled.p`
@@ -104,4 +114,5 @@ export const footerPbolder = styled.p`
   line-height: ${(props) => props.lineHeight};
   font-style: normal;
   color: ${T.theme.text.footer};
+  letter-spacing: 0.03em;
 `;
