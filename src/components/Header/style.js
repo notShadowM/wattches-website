@@ -6,6 +6,8 @@ export const Wrapper = styled.nav`
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
 `;
 
 export const Logo = styled.div`
@@ -44,7 +46,7 @@ export const Search = styled.div`
   border-radius: 50%;
   &:hover {
     cursor: pointer;
-    padding: 2.5px;
+    padding: 3px;
     border-color: #000;
     background-color: ${C.theme.common.white};
     transition: background-color 0.5s ease;
